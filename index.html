@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Animals of Chile - Final Project by Joaquin Zepeda">
+    <title>Animals of Chile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header img.flag {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            width: 40px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        img.animal {
+            margin: 0.5rem;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e0f7fa;
+        }
+
+        footer {
+            background-color: #003845;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -999px;
+        }
+
+        .skip-link:focus {
+            left: 0;
+            background: #ffb703;
+            color: #000;
+            padding: 0.5rem;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Wildlife of Chile</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/330px-Flag_of_Chile.svg.png"
+            alt="Chilean Flag" class="flag">
+        <nav>
+            <ul>
+                <li><a href="https://www.conaf.cl/parques-nacionales/" target="_blank">Chile's National Parks</a></li>
+                <li><a href="#main-content">See Animals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Endangered Animals in Chile</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Animal</th>
+                        <th>Status</th>
+                        <th>Region</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darwin's Fox</td>
+                        <td>Critically Endangered</td>
+                        <td>South</td>
+                    </tr>
+                    <tr>
+                        <td>Chilean Woodstar</td>
+                        <td>Critically Endangered</td>
+                        <td>North</td>
+                    </tr>
+                    <tr>
+                        <td>Andean Cat</td>
+                        <td>Endangered</td>
+                        <td>North</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Featured Animals of Northern Chile</h2>
+            <ul>
+                <li>Vicuña</li>
+                <li>Andean Flamingo</li>
+                <li>Culpeo Fox</li>
+            </ul>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rayWGx0ELRfX-VHzJVxgI85IgOoNdO2aDw&s"
+                alt="Vicuña walking in the Chilean highlands" width="300" class="animal">
+            <img src="https://www.avesdechile.cl/0jpgn/103.jpg" alt="Andean flamingos in an altiplanic lagoon"
+                width="300" class="animal">
+            <img src="https://www.reforestemos.org/content/uploads/zorro-culpeo.jpg"
+                alt="Culpeo fox in the Atacama Desert" width="300" class="animal">
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#">Back to top</a></p>
+        <p>&copy; 2025 Joaquin Zepeda - Final HTML Project</p>
+    </footer>
+
+</body>
+
+</html>
